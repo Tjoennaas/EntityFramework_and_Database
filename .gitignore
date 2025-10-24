@@ -22,8 +22,8 @@ appsettings.Development.json
 appsettings.Local.json
 secrets.json
 appsettings.json
-ErrorHandlingAndLogging.csproj
-ErrorHandlingAndLogging.sln
 
+EntityFramework_and_Database.csproj
+EntityFramework_and_Database.sln
 
 launchSettings.json
