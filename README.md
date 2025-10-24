@@ -27,6 +27,7 @@ Information when a new recipe is created (include recipe ID).
 Warning when a filter returns no results.
 
 Error for unexpected exceptions.
+
 /---------------------------------/
 
 Task 2 – Taskboard API (Kanban)
