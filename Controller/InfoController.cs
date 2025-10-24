@@ -2,7 +2,7 @@ using Options;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace LibraryApiDemo.Controllers;
+namespace Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
