@@ -1,23 +1,29 @@
 
 
+//https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-9.0&tabs=visual-studio#the-model-and-database-context-classes
 
-/*
-Validering
-Name (påkrevd, 3–100 tegn)
-Ingredients (minst 1)
-Steps (minst 1, maks 50)*/
+using System.ComponentModel.DataAnnotations;
 
 
 namespace Models;
 
-public class recipes{
+public class Recipe
+{
 
-     public int id { get; set; }
 
-    public string Name { get; set; }
+    [Key]
+    public int Id { get; set; }
 
+    [Required]
+   [StringLength(100, MinimumLength = 3)] 
+    public string Name { get; set; } = "";
+
+    [MinLength(1)]
     public List<string> Ingredients { get; set; } = new();
 
-    public List<string> Steps { get; set; }
-    
+
+    [MinLength(1)]
+    [MaxLength(50)]
+    public List<string> Steps { get; set; } = new();
+
 }
