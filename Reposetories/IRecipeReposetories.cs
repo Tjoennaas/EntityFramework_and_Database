@@ -10,9 +10,9 @@ namespace Repositories;
 public interface IRecipeRepositories
 {
     Task<IReadOnlyList<Recipe>> GetAllAsync();
-    Task<Recipe?> GetByIdAsync(int Id);
-    Task<Recipe> CreateAsync(Recipe recipes);
-    Task<bool> UpdateAsync(Recipe recipes);
+    Task<Recipe?> GetByIdAsync(int id);
+    Task<Recipe> AddAsync(Recipe recipes);
+    Task<bool> UpdateAsync( int id, Recipe recipes);
     Task<bool> DeleteAsync(int id);
 }
 
