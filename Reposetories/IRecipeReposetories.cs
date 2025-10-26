@@ -11,9 +11,10 @@ public interface IRecipeRepositories
 {
     Task<IReadOnlyList<Recipe>> GetAllAsync();
     Task<Recipe?> GetByIdAsync(int id);
-    Task<Recipe> AddAsync(Recipe recipes);
-    Task<bool> UpdateAsync( int id, Recipe recipes);
+    Task<Recipe> AddAsync(string Name,Recipe recipe);
+    Task<bool> UpdateAsync( int id, Recipe recipe);
     Task<bool> DeleteAsync(int id);
 }
 
 
+ 

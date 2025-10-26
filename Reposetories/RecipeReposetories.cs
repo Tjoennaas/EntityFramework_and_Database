@@ -4,7 +4,7 @@
 
 // https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework-core-charset.html
 
-
+//
 using Data;
 using Microsoft.EntityFrameworkCore;
 using Models;
